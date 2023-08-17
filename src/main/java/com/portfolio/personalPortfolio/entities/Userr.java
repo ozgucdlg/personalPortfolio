@@ -4,6 +4,7 @@ import jakarta.persistence.*;
 import lombok.Data;
 
 @Entity
+
 @Data
 @Table(name="userr")
 public class Userr {
@@ -24,6 +25,9 @@ public class Userr {
 
     @Column(name="email")
     private String email;
+
+    @Column(name="message")
+    private String message;
 
 
 
