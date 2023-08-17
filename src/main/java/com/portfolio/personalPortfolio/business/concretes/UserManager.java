@@ -1,7 +1,8 @@
 package com.portfolio.personalPortfolio.business.concretes;
 
 import com.portfolio.personalPortfolio.business.abstracts.UserService;
-import com.portfolio.personalPortfolio.entities.User;
+import com.portfolio.personalPortfolio.entities.Userr;
+import com.portfolio.personalPortfolio.entities.Userr;
 import com.portfolio.personalPortfolio.repository.UserRepository;
 import lombok.NoArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,17 +23,17 @@ public class UserManager implements UserService {
     }
 
     @Override
-    public List<User> getAll() {
+    public List<Userr> getAll() {
         return userRepository.findAll();
     }
 
     @Override
-    public User add(User user) {
+    public Userr add(Userr user) {
         return userRepository.save(user);
     }
 
     @Override
-    public User getById(int id) {
+    public Userr getById(int id) {
         return userRepository.findById(id).orElse(null);
     }
 
@@ -42,7 +43,7 @@ public class UserManager implements UserService {
     }
 
     @Override
-    public User update(User user) {
+    public Userr update(Userr user) {
     return userRepository.save(user);
     }
 }

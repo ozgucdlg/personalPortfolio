@@ -1,16 +1,16 @@
 package com.portfolio.personalPortfolio.business.abstracts;
 
 
-import com.portfolio.personalPortfolio.entities.User;
+import com.portfolio.personalPortfolio.entities.Userr;
 
 import java.util.List;
 
 public interface UserService  {
 
-    List<User> getAll();
-    User add(User user);
-    User getById(int id);
+    List<Userr> getAll();
+    Userr add(Userr user);
+    Userr getById(int id);
     void delete(int id);
-    User update(User user);
+    Userr update(Userr user);
 
 }
