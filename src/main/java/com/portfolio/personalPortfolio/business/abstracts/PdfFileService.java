@@ -7,4 +7,6 @@ public interface PdfFileService {
 
      PdfFile uploadPdf(MultipartFile pdfFile);
      PdfFile savedFile(PdfFile pdfFile );
+     byte[] getPdfContent();
+
 }
